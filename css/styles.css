@@ -1,0 +1,130 @@
+/* Estilos globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* CSS Variables */
+
+:root{
+    --title-font: 'Plus Jakarta Sans', sans-serif;
+    --paragraph-font: 'IBM Plex Mono', monospace;
+    --primary-color: #1D1D1C;
+    --secondary-color: #fff;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.navbar__logo{
+    height: 3.3rem;
+    width: 3.3rem;
+}
+
+.navbar__burguer-button{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.navbar__burguer-button svg{
+    /* height: 3rem; */
+    width: 3.2rem;
+}
+
+.navbar__menu{
+    display: none;
+    list-style: none;
+}
+
+.navbar__theme-btn{
+    display: none;
+}
+
+@media (min-width: 1024px){
+    .navbar{
+       padding: 3rem;
+    }
+
+    .navbar__logo{
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+
+    .navbar__burguer-button{
+        display: none;
+    }
+
+    .navbar__burguer-button svg{
+        display: none;
+    }
+
+    .navbar__menu{
+        display: flex;
+        gap: 5rem;
+        font-family: var(--title-font);
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+    }
+
+    .navbar__menu-link a{
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+
+    .navbar__theme-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #1D1D1C;
+        border-radius: 20px;
+        font-family: var(--title-font);
+        color: var(--primary-color);
+        padding: 1.2rem 2rem;
+        gap: 1rem;
+        cursor: pointer;
+    }
+
+    .navbar__theme-btn svg{
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+
+
