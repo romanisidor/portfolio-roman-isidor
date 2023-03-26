@@ -70,6 +70,7 @@ body {
 .navbar__menu{
     display: none;
     list-style: none;
+    z-index: 999999;
 }
 
 .navbar__theme-btn{
@@ -78,7 +79,7 @@ body {
 
 @media (min-width: 1024px){
     .navbar{
-       padding: 3rem;
+       padding: 3rem 0;
     }
 
     .navbar__logo{
@@ -137,8 +138,6 @@ body {
     margin-top: 5rem;
     position: relative;
     z-index: 50;
-    /* background-color: red; */
-    /* padding: 0 1rem; */
 }
 
 .light1{
@@ -152,6 +151,19 @@ body {
     top: -10rem;
     z-index: -1;
     left: -10rem;
+}
+
+.light2{
+    width: 40rem;
+    height: 40rem;
+    border-radius: 99999px;
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(199, 227, 247, 0.5) 0%, rgba(199, 227, 246, 0) 100%);;
+    filter: blur(50px);
+    z-index: -1;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .header__photo{
@@ -196,8 +208,30 @@ body {
 
 }
 
+.header__icons{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__icons ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    list-style: none;
+}
+
+.header__icons-link{
+    color: var(--primary-color);
+
+}
+
+.header__icons-link i{
+    font-size: 3.5rem;
+}
+
 @media (min-width:1024px){
-  
     .header__photo{
         padding: 0;
     }
@@ -228,6 +262,14 @@ body {
         top: -20rem;
         z-index: -1;
         left: 20%;
+    }
+
+    .light2{
+        top: 70%;
+    }
+
+    .header__icons-link i{
+        font-size: 4rem;
     }
 }
 

@@ -11,11 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     
+
      <!-- Stylesheet -->
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
     
-    
+    <!-- FontAwesome -->
+    <script src="https://use.fontawesome.com/6232d8615c.js"></script>
 </head>
 <body>
 
@@ -23,10 +25,18 @@
     <nav class="navbar">
         <a href="index.html"><img src="/img/logo_website.svg" class="navbar__logo " alt="Logo Website"></a>
         
-        <ul class="navbar__menu">
-            <li class="navbar__menu-link"><a href="/">Proyectos</a></li>
-            <li class="navbar__menu-link"><a href="/">Acerca de mí</a></li>
-            <li class="navbar__menu-link"><a href="/">Contacto</a></li>
+        <ul class="navbar__menu no-padding">
+            <li class="navbar__menu-link">
+                <a href="/">Proyectos</a>
+            </li>
+            <li class="navbar__menu-link">
+                <a href="/">Acerca de mí</a>
+            </li>
+            <li class="navbar__menu-link">
+                <a href="/">Contacto</a>
+            </li>
+            
+            
         </ul>
 
         <button class="navbar__theme-btn">
@@ -45,6 +55,7 @@
 
     <main class="header">
         <div class="light1"></div>
+        <div class="light2"></div>
         <div class="header__photo">
             <img src="/img/curved_line.svg" class="line" alt="Line">
             <img src="/img/profile_picture.png" class="profile-picture" alt="Román Isidor Picture">
@@ -53,6 +64,28 @@
         <h1 class="header__title">Potencia tus experiencias digitales <br> con las tecnologías de vanguardia del mundo web <br> y supera las expectativas.</h1>
         <div class="header__text-wrapper">
             <p class="header__paragraph">Mi nombre es Román Antonio Isidor, soy Desarrollador Web Frontend con 2+ años de experiencia. Me especializo en crear interfaces enfocadas en la simplicidad y la usabilidad.</p>
+        </div>
+        <div class="light2"></div>
+
+        <div class="header__icons">
+            <ul class="no-padding">
+                <li>
+                    <a class="header__icons-link" href="https://github.com/romanisidor" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="header__icons-link" href="https://www.linkedin.com/in/romanisidor/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="header__icons-link" href="mailto:romanantonioisidor@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </main>
 
